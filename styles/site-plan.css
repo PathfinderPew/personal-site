@@ -1,0 +1,31 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+}
+
+#overview, #branding, #style-guide {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+}
