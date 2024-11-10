@@ -19,7 +19,7 @@ h1, h2 {
     font-family: sans-serif;
 }
 
-#overview, #branding, #style-guide {
+#overview, #branding, #style-guide, #content {
     padding: 1rem;
     border-bottom: 1px solid #ddd;
 }
@@ -28,4 +28,20 @@ img {
     display: block;
     margin: 1rem auto;
     max-width: 100%;
+    height: auto;
+}
+
+/* Content Styling */
+#content {
+    margin-top: 2rem;
+}
+
+#content h2 {
+    margin-top: 1.5rem;
+    color: #1a1a1a;
+}
+
+#content p {
+    margin: 1rem 0;
+    text-align: justify;
 }
