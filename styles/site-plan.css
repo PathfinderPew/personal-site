@@ -1,3 +1,4 @@
+/* General Layout */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -21,14 +22,28 @@ nav a {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Sidebar and Main Content */
+    grid-gap: 20px;
     padding: 2rem;
 }
 
-main img {
+section {
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 1rem 0;
+}
+
+/* Navigation Styling */
+nav {
+    margin-bottom: 1rem;
 }
 
 footer {
@@ -37,3 +52,14 @@ footer {
     background-color: #333;
     color: white;
 }
+
+/* Wireframe-specific Grid for Home Page */
+main > section {
+    grid-column: span 2;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Sans-serif', Arial;
+}
+
