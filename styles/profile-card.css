@@ -1,8 +1,16 @@
+/* Container for About Me Content */
+.about-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Adds space between text and profile card */
+}
+
 /* Container for Profile Card */
 .profile-container {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    width: 100%;
 }
 
 /* Profile Card */
