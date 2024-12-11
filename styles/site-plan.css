@@ -62,8 +62,8 @@ section img,
 .hobbies-grid img,
 .card img {
     max-width: 100%; /* Ensures responsiveness */
-    width: 300px;    /* Sets a consistent width */
-    height: 200px;   /* Sets a consistent height */
+    width: 600px;    /* Doubles the current width */
+    height: 400px;   /* Slightly taller than wide */
     object-fit: cover; /* Ensures images fill the specified dimensions */
     display: block;
     margin: 10px auto;
