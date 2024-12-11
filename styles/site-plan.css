@@ -21,31 +21,148 @@ nav a {
     color: white;
 }
 
-main {
-    display: grid;
-    gap: 20px;
-    padding: 2rem;
+nav {
+    margin-bottom: 1rem;
 }
 
-/* Project Layout */
-.project {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
     background-color: #333;
     color: white;
+}
+
+/* Main Layout */
+main {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2, section h3 {
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Projects Page */
+.project {
+    text-align: center;
+}
+
+.project img {
+    border-radius: 5px;
+}
+
+/* Grid for Hobbies Section */
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hobbies-grid div {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.hobbies-grid img {
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Profile Card (From Home Page) */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.card .title {
+    color: grey;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #4CAF50;
+    margin: 0 10px;
+}
+
+.card a:hover {
+    opacity: 0.7;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #4CAF50;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Button Style */
+.contact-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #45a049;
 }
