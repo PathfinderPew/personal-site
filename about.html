@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Brandon Pew</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site-plan.css">
 </head>
 <body>
     <header>
         <h1>About Me</h1>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="projects.html">Projects</a> | 
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
         </nav>
     </header>
@@ -19,7 +20,7 @@
     <main>
         <section>
             <h2>My Journey</h2>
-            <p>From my first line of code to specializing in cloud technologies, my journey has been driven by a passion for learning and technology. However, most important of all to me, my journey has lead to my wife and daughter.</p>
+            <p>From my first line of code to specializing in cloud technologies, my journey has been driven by a passion for learning and technology.</p>
             <img src="images/about-journey.jpg" alt="My Journey">
         </section>
         <section>
@@ -45,8 +46,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Brandon Pew. All rights reserved.</p>
-        <p><a href="site-plan.html">View the Site Plan</a></p>
+        <p>&copy; <span id="year"></span> Brandon Pew. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerText = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

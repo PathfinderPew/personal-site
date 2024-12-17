@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Brandon Pew</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site-plan.css">
-    <link rel="stylesheet" href="styles/profile-card.css">
 </head>
 <body>
     <header>
         <h1>Welcome to My Portfolio</h1>
         <p>Showcasing my skills in cloud computing and web development</p>
-        <nav>
-            <a href="index.html">Home</a> | 
-            <a href="projects.html">Projects</a> | 
+        <nav aria-label="Main Navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
             <a href="about.html">About Me</a>
         </nav>
     </header>
@@ -21,23 +21,14 @@
     <main>
         <section>
             <h2>Hello!</h2>
-            <div class="about-me-content">
-                <p>My name is Brandon Pew, and I specialize in cloud computing, web development, and DevOps.</p>
-                <div class="profile-container">
-                    <div class="card">
-                        <img src="images/profile.jpg" alt="Brandon Pew" style="width:100%">
-                        <h1>Brandon Pew</h1>
-                        <p class="title">Cloud Computing Specialist</p>
-                        <p>Brigham Young University - Idaho</p>
-                        <div style="margin: 24px 0;">
-                            <a href="https://linkedin.com/in/your-linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>  
-                            <a href="https://github.com/your-github" target="_blank"><i class="fa fa-github"></i></a>  
-                            <a href="mailto:your-email@example.com"><i class="fa fa-envelope"></i></a>  
-                        </div>
-                        <p>
-                            <a href="https://www.linkedin.com/in/brandon-p-105aa6307" target="_blank" class="contact-button">Contact</a>
-                        </p>
-                    </div>
+            <p>My name is Brandon Pew, and I specialize in cloud computing, web development, and DevOps.</p>
+            <div class="profile-container">
+                <div class="card">
+                    <img src="images/profile.jpg" alt="Brandon Pew">
+                    <h1>Brandon Pew</h1>
+                    <p class="title">Cloud Computing Specialist</p>
+                    <p>Brigham Young University - Idaho</p>
+                    <p><a href="https://linkedin.com/in/your-linkedin" class="contact-button">Contact</a></p>
                 </div>
             </div>
         </section>
@@ -49,8 +40,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Brandon Pew. All rights reserved.</p>
-        <p><a href="site-plan.html">View the Site Plan</a></p>
+        <p>&copy; <span id="year"></span> Brandon Pew. All rights reserved.</p>
+        <script>
+            document.getElementById("year").innerText = new Date().getFullYear();
+        </script>
     </footer>
 </body>
 </html>

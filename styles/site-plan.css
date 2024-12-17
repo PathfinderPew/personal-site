@@ -1,128 +1,77 @@
-/* General Layout */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
     margin: 0;
-    padding: 0;
 }
 
 header {
     background-color: #4CAF50;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 1rem;
 }
 
 nav a {
-    margin: 0 1rem;
     text-decoration: none;
     color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
-nav {
-    margin-bottom: 1rem;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
-}
-
-/* Main Layout */
-main {
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Section Styling */
-section {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2, section h3 {
-    text-align: center;
-}
-
-section p {
-    text-align: justify;
-    margin: 10px 0;
-}
-
-/* Uniform Image Styling */
-section img,
-.project img,
-.hobbies-grid img,
-.card img {
-    max-width: 100%; /* Ensures responsiveness */
-    width: 600px;    /* Doubles the current width */
-    height: 400px;   /* Slightly taller than wide */
-    object-fit: cover; /* Ensures images fill the specified dimensions */
-    display: block;
-    margin: 10px auto;
+nav a:hover {
+    color: #333;
+    background-color: #ddd;
+    padding: 5px;
     border-radius: 5px;
 }
 
-/* Projects Page */
-.project {
+footer {
+    background-color: #333;
+    color: white;
     text-align: center;
+    padding: 1rem;
 }
 
-/* Grid for Hobbies Section */
+main {
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.project {
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
 .hobbies-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-}
-
-.hobbies-grid div {
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-/* Profile Card (From Home Page) */
-.profile-container {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.card img {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-/* Contact Button Style */
-.contact-button {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #4CAF50;
-    color: white;
-    padding: 8px 16px;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.contact-button:hover {
-    background-color: #45a049;
 }
